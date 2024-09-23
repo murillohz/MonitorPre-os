@@ -1,0 +1,119 @@
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 450px;  
+    height: 550px; 
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Título */
+h1 {
+    font-size: 22px; 
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Botão padrão */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Seção dos produtos monitorados */
+h2 {
+    font-size: 18px; 
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Lista de produtos monitorados */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: 300px;
+}
+
+ul li {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Botões dentro da lista */
+ul li button {
+    font-size: 14px;
+    width: 48%; 
+}
+
+ul li .remove-button {
+    background-color: #ff4d4d; 
+}
+
+ul li .remove-button:hover {
+    background-color: #ff1a1a;
+}
+
+ul li .button-group {
+    display: flex;
+    justify-content: space-between; 
+}
+
+/* Botão de exportar CSV */
+#export-csv {
+    background-color: #4CAF50;
+}
+
+#export-csv:hover {
+    background-color: #45a049;
+}

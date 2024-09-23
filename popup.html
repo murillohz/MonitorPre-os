@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Preços</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Monitor de Preços</h1>
+    <form id="price-form">
+        <label for="product-url">URL do Produto:</label>
+        <input type="text" id="product-url" required>
+
+        <label for="target-price">Preço Alvo:</label>
+        <input type="number" id="target-price" required>
+
+        <button type="submit">Adicionar Produto</button>
+    </form>
+
+    <h2>Produtos Monitorados</h2>
+    <ul id="product-list"></ul>
+
+    <button id="export-csv">Exportar Histórico para CSV</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
